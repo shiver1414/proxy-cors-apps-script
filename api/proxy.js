@@ -1,10 +1,9 @@
 const express = require('express');
-const fetch = require('node-fetch');
 
 const app = express();
 
 app.get('/', async (req, res) => {
-  const dataUrl = 'https://script.google.com/macros/s/AKfycby_pyMEY-wlNdgkMq7X2wC91aZ2K1GpUimquIxTvLVK0lQUDYBIm2Z6CaT1pf8njOQ/exec'; // URL Apps Script Anda
+  const dataUrl = 'https://script.google.com/macros/s/AKfycby_pyMEY-wlNdgkMq7X2wC91aZ2K1GpUimquIxTvLVK0lQUDYBIm2Z6CaT1pf8njOQ/exec'; // Your Apps Script URL
 
   try {
     const response = await fetch(dataUrl);
